@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:20');
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bahnschrift', sans-serif;
+}
+.full-width
+{
+    width: 100%;
+    box-sizing: border-box;
+}
+.full-width.search
+{
+    position: relative;
+    background: #767676;
+    padding: 10px 100px;
+}
+.search-form
+{
+    position: relative;
+    padding-left: 20px;
+}
+.search-form:before
+{
+    content: '\f002' ;
+    position: absolute;
+    color: #fff;
+    font-family: fontAwesome;
+    top: 8px;
+    left: 0;
+}
+.search-form ::placeholder
+{
+  color: #fff;
+}
+.search-form input
+{
+    width: 100%;
+    height: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size:20px;
+}
+.close
+{
+    color: #fff;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    cursor: pointer;
+}
+header
+{
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    
+}
+.logo
+{
+    color: #FF5A5F;
+    height: 60px;
+    font-size: 36px;
+    line-height: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 700;
+    text-decoration: none;
+}
+nav{
+    float: right;    
+}
+.clearfix
+{
+    clear: both;
+}
+nav ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;   
+}
+nav ul li
+{
+ list-style: none;
+}
+nav ul li a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #262626
+}
+nav ul li a.active,
+nav ul li a:hover
+{
+    background: #FF5A5F;
+    color: #fff;
+    transition: 0.7s;
+} 
+@media (max-width: 1200px)
+{
+    header
+    {
+        margin: 20px;
+    }
+}
+@media (max-width: 768px)
+{
+    .menu-toggle
+    {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: #FC642D;
+    }
+    .menu-toggle:before
+    {
+        content: '\f0c9';
+      font-family: fontAwesome;
+        line-height: 40px;
+    }
+    .menu-toggle.active:before
+    {
+        content: '\f00d';
+      font-family: fontAwesome;
+        line-height: 40px;
+    }
+    nav 
+    {
+        display: none;
+    }
+     nav.active
+    {
+        display: block;
+        width: 100%;
+    }
+    nav.active ul
+    {
+        display: block;
+    }
+      nav.active ul li a
+    {
+       margin: 0;
+    }
+    .full-width.navbar ul li a.search-icon
+    {
+        background: #FF5A5F; 
+        cursor: pointer;
+    }
+}
